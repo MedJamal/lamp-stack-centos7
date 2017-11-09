@@ -241,6 +241,14 @@ else
     sudo service iptables restart
 fi
 
+# added by tones7778:
+sudo yum -y install gcc libffi-devel python-devel openssl-devel python-crypto htop nmap python-pip python-setuptools vim-enhanced iftop ifconfig bind-utils moreutils net-tools glances git wget sshpass
+
+sudo -H pip install --upgrade pip
+sudo -H pip install paramiko
+sudo -H pip install flask fabric ansible
+
+
 
 # Install PHP 5.6
 sudo yum install -y php56u php56u-mysql php56u-bcmath php56u-cli php56u-common php56u-ctype php56u-devel php56u-embedded php56u-enchant php56u-fpm php56u-gd php56u-hash php56u-intl php56u-json php56u-ldap php56u-mbstring php56u-mysql php56u-odbc php56u-pdo php56u-pear.noarch php56u-pecl-jsonc php56u-pecl-memcache php56u-pgsql php56u-phar php56u-process php56u-pspell php56u-openssl php56u-recode php56u-snmp php56u-soap php56u-xml php56u-xmlrpc php56u-zlib php56u-zip
